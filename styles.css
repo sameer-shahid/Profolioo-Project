@@ -559,3 +559,104 @@ ul {
   color: #6763fd;
   cursor: pointer;
 }
+
+/* Contact Section */
+.contact {
+  width: 375px;
+  height: 779px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  background-color: #6070ff;
+  border-radius: 70px 0 0 0;
+  color: #fff;
+  background-image: url(./src/headerandfooter/contact\ form\ shapes-mobile.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 44px;
+}
+
+.contact-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 327px;
+  height: 48px;
+}
+
+.contact-form textarea {
+  width: 327px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  height: 170px;
+}
+
+.section-title-contact {
+  width: 327px;
+  height: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;  /* Centers text horizontally */
+  margin-bottom: 0;   /* Corrected margin syntax */
+}
+
+.contact-description {
+  width: 327px;
+  height: 115px;
+  font-size: 16px;
+  color: white;
+  text-align: center;  /* Centers text horizontally */
+  margin-bottom: 0;   /* Corrected margin syntax */
+}
+
+.contact-form .submit-btn {
+  background-color: white;
+  color: #5751f5; /* Ensure text color matches the button background */
+  padding: 12px 16px; /* Adjust the padding as per your specification */
+  border: none;
+  border-radius: 8px 8px 8px 8px; /* Specific border-radius */
+  font-size: 16px;
+  cursor: pointer;
+  width: 142px; /* Set to Hug width */
+  height: 48px; /* Set to Hug height */
+  opacity: 1; /* To make sure the button is fully visible */
+}
+
+.contact-form .submit-btn:hover {
+  background-color: #5751f5; /* Change background color on hover */
+  color: white; /* Ensure the text becomes readable on hover */
+}
+
+.contact-me {
+  width: 100%;
+  height: 779px;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-me .blue {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #6070ff;
+  border-radius: 70px 0 0 0;
+  color: #fff;
+  padding: 114px 24px;
+  background-image: url(src/contact\ form\ shapes-mobile.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
