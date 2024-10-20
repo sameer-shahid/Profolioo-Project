@@ -1053,4 +1053,169 @@ ul {
     line-height: 24px;
     text-align: left;
   }
+
+  /* Contact Section */
+  .contact {
+    width: 1440px; /* Width for desktop view */
+    height: auto; /* Adjust height based on content */
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    background-color: #6070ff;
+    border-radius: 70px 0 0 0;
+    color: #fff;
+    background-image: url(./src/headerandfooter/contact\ form\ background\ shapes@2x.png); /* Use a different background for desktop if needed */
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto; /* Center the container */
+    align-items: center; /* Center align items horizontally */
+  }
+
+  /* Contact form styles */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 44px;
+    align-items: center; /* Center align inputs */
+  }
+
+  /* Input fields */
+  .contact-form input,
+  .contact-form textarea {
+    width: 447px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+
+  /* Textarea */
+  .contact-form textarea {
+    height: 170px; /* Fixed height */
+  }
+
+  /* Section title */
+  .section-title-contact {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center; /* Centers text horizontally */
+  }
+
+  /* Contact description */
+  .contact-description {
+    font-size: 16px;
+    color: white;
+    text-align: center; /* Centers text horizontally */
+  }
+
+  /* Submit button */
+  .contact-form .submit-btn {
+    background-color: white;
+    color: #5751f5; /* Ensure text color matches the button background */
+    padding: 12px 16px; /* Adjust padding */
+    border: none;
+    border-radius: 8px; /* Specific border-radius */
+    font-size: 16px;
+    cursor: pointer;
+    width: 142px; /* Set to Hug width */
+    height: 48px; /* Set to Hug height */
+    opacity: 1; /* Fully visible */
+  }
+
+  .contact-form .submit-btn:hover {
+    background-color: #5751f5; /* Change background color on hover */
+    color: white; /* Ensure text becomes readable on hover */
+  }
+
+  /* Contact Me Section */
+  .contact-me {
+    width: 100%;
+    height: auto; /* Adjust height based on content */
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-me .blue {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #6070ff;
+    border-radius: 70px 0 0 0;
+    color: #fff;
+    padding: 114px 24px;
+    background-image: url(./src/headerandfooter/contact\ form\ background\ shapes@2x.png); /* Use a different background for desktop if needed */
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* Desktop version adjustments */
+  .modal-content {
+    width: 1156px;
+    height: auto;
+    top: 77px;
+    left: 142px;
+    padding: 40px;
+    max-width: none;
+    margin: 0 0 0 0;
+    gap: 0;
+    opacity: 1; /* Make sure the modal is visible */
+    border-radius: 10px;
+  }
+
+  .modal-title {
+    font-size: 42px; /* Adjusted for larger screens */
+  }
+
+  .modal-description {
+    font-size: 16px; /* Slightly larger text */
+  }
+
+  .modal-image img {
+    max-height: 500px; /* Set a maximum height for images */
+  }
+
+  .modal-tech li {
+    font-size: 14px; /* Slightly larger tech tag text */
+  }
+
+  .close-modal {
+    font-size: 32px; /* Slightly larger close button */
+  }
+
+  .modal-info {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    color: #707070;
+    font-size: 14px;
+    margin-bottom: 20px;
+    gap: 2px; /* Reduce the space between items */
+  }
+
+  .see-live {
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 1px solid #6763fd;
+    border-radius: 8px;
+    background-color: white;
+    color: #6763fd;
+    cursor: pointer;
+  }
+
+  .see-source {
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 1px solid #6763fd;
+    border-radius: 8px;
+    background-color: white;
+    color: #6763fd;
+    cursor: pointer;
+  }
 }
