@@ -306,3 +306,256 @@ ul {
   color: #6763fd;
   cursor: pointer;
 }
+
+/* Main about section */
+.about {
+  width: 375px;
+  padding: 114px 24px;
+  background-color: #fff;
+}
+
+/* First div with title and description */
+.about-info {
+  width: 327px;
+  height: 393px;
+  gap: 2px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 20px 16px;
+}
+
+.section-title {
+  width: 327px;
+  height: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #1f2533;
+  margin: bottom 0;
+}
+
+.about-description {
+  width: 327px;
+  height: 147px;
+  font-size: 16px;
+  color: #707070;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+/* Container for all dropdowns */
+.about-dropdowns {
+  width: 327px;
+  height: auto;
+  gap: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px 25px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.button-container-about {
+  width: 162px; /* Adjusted to Hug (162px)px */
+  height: 48px; /* Adjusted to Hug (48px)px */
+  display: flex;
+  align-items: center;
+  justify-content: left; /* Aligns button to the left inside the container */
+  padding: 0;
+  margin-top: 17px;
+}
+
+.project-button-about {
+  font-size: 15px;
+  padding: 10px 20px;
+  border: 1px solid #6763fd;
+  border-radius: 8px;
+  background-color: white;
+  color: #6763fd;
+  cursor: pointer;
+}
+
+/* Dropdown container */
+.dropdown-container {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
+/* Dropdown header */
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+  color: #1f2533;
+  cursor: pointer;
+  background-color: white;
+  margin-top: 48px;
+}
+
+/* Arrow rotation for opened state */
+.dropdown-header .arrow {
+  font-size: large;
+  transform: rotate(0);
+  transition: transform 0.3s ease;
+}
+
+.dropdown-header.open .arrow {
+  transform: rotate(180deg);
+}
+
+/* Dropdown list */
+.dropdown-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease, height 0.3s ease;
+  height: 0; /* Closed state */
+  overflow: hidden;
+}
+
+/* Open state for the dropdown */
+.dropdown-list.open {
+  height: auto;
+  opacity: 1;
+}
+
+/* List items styling */
+.dropdown-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Styling for icons inside list items */
+.icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px; /* Adds space between the icon and the text */
+  border-radius: 50%; /* Optional: if you want the icon to appear circular */
+  border: 1px solid transparent; /* Adjust the border as needed */
+  opacity: 1; /* Make sure icon is visible */
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000; /* Sits on top of everything else */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if content is too long */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px; /* Adjust modal width */
+  position: relative;
+}
+
+.close-modal {
+  color: #aaa;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f2533;
+  margin-bottom: 10px;
+}
+
+.modal-info {
+  display: flex;
+  justify-content: space-between;
+  color: #707070;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.modal-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.modal-description {
+  font-size: 14px;
+  color: #707070;
+  margin: 15px 0;
+}
+
+.modal-tech {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-tech li {
+  background-color: #e5e5ff;
+  color: #6763fd;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.see-live {
+  font-size: 15px;
+  padding: 10px 20px;
+  border: 1px solid #6763fd;
+  border-radius: 8px;
+  background-color: white;
+  color: #6763fd;
+  cursor: pointer;
+}
+
+.see-source {
+  font-size: 15px;
+  padding: 10px 20px;
+  border: 1px solid #6763fd;
+  border-radius: 8px;
+  background-color: white;
+  color: #6763fd;
+  cursor: pointer;
+}
