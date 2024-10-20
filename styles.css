@@ -306,3 +306,610 @@ ul {
   color: #6763fd;
   cursor: pointer;
 }
+
+/* Main about section */
+.about {
+  width: 375px;
+  padding: 114px 24px;
+  background-color: #fff;
+}
+
+/* First div with title and description */
+.about-info {
+  width: 327px;
+  height: 393px;
+  gap: 2px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 20px 16px;
+}
+
+.section-title {
+  width: 327px;
+  height: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #1f2533;
+  margin: bottom 0;
+}
+
+.about-description {
+  width: 327px;
+  height: 147px;
+  font-size: 16px;
+  color: #707070;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+/* Container for all dropdowns */
+.about-dropdowns {
+  width: 327px;
+  height: auto;
+  gap: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px 25px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.button-container-about {
+  width: 162px; /* Adjusted to Hug (162px)px */
+  height: 48px; /* Adjusted to Hug (48px)px */
+  display: flex;
+  align-items: center;
+  justify-content: left; /* Aligns button to the left inside the container */
+  padding: 0;
+  margin-top: 17px;
+}
+
+.project-button-about {
+  font-size: 15px;
+  padding: 10px 20px;
+  border: 1px solid #6763fd;
+  border-radius: 8px;
+  background-color: white;
+  color: #6763fd;
+  cursor: pointer;
+}
+
+/* Dropdown container */
+.dropdown-container {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
+/* Dropdown header */
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+  color: #1f2533;
+  cursor: pointer;
+  background-color: white;
+  margin-top: 48px;
+}
+
+/* Arrow rotation for opened state */
+.dropdown-header .arrow {
+  font-size: large;
+  transform: rotate(0);
+  transition: transform 0.3s ease;
+}
+
+.dropdown-header.open .arrow {
+  transform: rotate(180deg);
+}
+
+/* Dropdown list */
+.dropdown-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease, height 0.3s ease;
+  height: 0; /* Closed state */
+  overflow: hidden;
+}
+
+/* Open state for the dropdown */
+.dropdown-list.open {
+  height: auto;
+  opacity: 1;
+}
+
+/* List items styling */
+.dropdown-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Styling for icons inside list items */
+.icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px; /* Adds space between the icon and the text */
+  border-radius: 50%; /* Optional: if you want the icon to appear circular */
+  border: 1px solid transparent; /* Adjust the border as needed */
+  opacity: 1; /* Make sure icon is visible */
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000; /* Sits on top of everything else */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if content is too long */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px; /* Adjust modal width */
+  position: relative;
+}
+
+.close-modal {
+  color: #aaa;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f2533;
+  margin-bottom: 10px;
+}
+
+.modal-info {
+  display: flex;
+  justify-content: space-between;
+  color: #707070;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.modal-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.modal-description {
+  font-size: 14px;
+  color: #707070;
+  margin: 15px 0;
+}
+
+.modal-tech {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-tech li {
+  background-color: #e5e5ff;
+  color: #6763fd;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.see-live {
+  font-size: 15px;
+  padding: 10px 20px;
+  border: 1px solid #6763fd;
+  border-radius: 8px;
+  background-color: white;
+  color: #6763fd;
+  cursor: pointer;
+}
+
+.see-source {
+  font-size: 15px;
+  padding: 10px 20px;
+  border: 1px solid #6763fd;
+  border-radius: 8px;
+  background-color: white;
+  color: #6763fd;
+  cursor: pointer;
+}
+
+/* Contact Section */
+.contact {
+  width: 375px;
+  height: 779px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  background-color: #6070ff;
+  border-radius: 70px 0 0 0;
+  color: #fff;
+  background-image: url(./src/headerandfooter/contact\ form\ shapes-mobile.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 44px;
+}
+
+.contact-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 327px;
+  height: 48px;
+}
+
+.contact-form textarea {
+  width: 327px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  height: 170px;
+}
+
+.section-title-contact {
+  width: 327px;
+  height: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;  /* Centers text horizontally */
+  margin-bottom: 0;   /* Corrected margin syntax */
+}
+
+.contact-description {
+  width: 327px;
+  height: 115px;
+  font-size: 16px;
+  color: white;
+  text-align: center;  /* Centers text horizontally */
+  margin-bottom: 0;   /* Corrected margin syntax */
+}
+
+.contact-form .submit-btn {
+  background-color: white;
+  color: #5751f5; /* Ensure text color matches the button background */
+  padding: 12px 16px; /* Adjust the padding as per your specification */
+  border: none;
+  border-radius: 8px 8px 8px 8px; /* Specific border-radius */
+  font-size: 16px;
+  cursor: pointer;
+  width: 142px; /* Set to Hug width */
+  height: 48px; /* Set to Hug height */
+  opacity: 1; /* To make sure the button is fully visible */
+}
+
+.contact-form .submit-btn:hover {
+  background-color: #5751f5; /* Change background color on hover */
+  color: white; /* Ensure the text becomes readable on hover */
+}
+
+.contact-me {
+  width: 100%;
+  height: 779px;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-me .blue {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #6070ff;
+  border-radius: 70px 0 0 0;
+  color: #fff;
+  padding: 114px 24px;
+  background-image: url(src/contact\ form\ shapes-mobile.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Desktop version - apply for screens wider than 768px */
+@media (min-width: 768px) {
+  body {
+    max-width: 1440px; /* Increase the max width for desktop screens */
+    margin: 0 auto; /* Center the body content */
+    background-color: #e5e5e5;
+  }
+
+  header {
+    width: 1440px;
+    height: 72px;
+    padding: 16px 143px;
+    margin: 0 auto;
+  }
+
+  nav a {
+    color: #333;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: normal;
+    margin-right: 30px;
+  }
+
+  .logo a {
+    font-size: 1.5rem; /* Larger size for desktop */
+    color: #6763fd;
+  }
+
+  /* Display the navigation links on desktop */
+  nav {
+    display: flex;
+    gap: 30px;
+  }
+
+  nav a:last-child {
+    margin-right: 0; /* Remove margin for last item */
+  }
+
+  /* Hide the hamburger icon on desktop */
+  .menu-icon {
+    display: none; /* Hide on desktop */
+  }
+
+  .custom-div {
+    width: 1397px; /* Adjust to full width to avoid hardcoded pixel values */
+    height: 721.46px;
+    background-image: url('./src/headerandfooter/Header%20bg.svg');
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the background image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 0;
+  }
+
+  .mainsection {
+    width: 1440.4px;
+    height: 721.46px;
+    padding: 0 0 0 0;
+    background-color: white;
+    border-bottom-left-radius: 112px;
+  }
+
+  .headline {
+    text-align: left;
+  }
+
+  .intro {
+    margin-bottom: 40px;
+  }
+
+  .primarytext {
+    width: 529px;
+    height: 130px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.3700000047683716px;
+    text-align: left;
+    padding: 40px 40px 40px 0;
+  }
+
+  .primarytext2 {
+    padding: 40px 40px 0 0;
+    width: 920px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+  }
+
+  .social-icons-about {
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .social-icons-about h2 {
+    width: 334px;
+    height: 24px;
+    padding: 0 40px 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #6763fd;
+  }
+
+  .social-icons-about .icons {
+    padding: 0 40px 40px 0;
+    display: flex;
+    gap: 10px;
+    width: 170.17px;
+    height: 20px;
+  }
+
+  .icons img {
+    width: 20px;
+    height: 20px;
+    margin: bottom 0;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Work Section - Desktop */
+  .works {
+    width: 100%;
+    max-width: 1440px; /* Full width for large screens */
+    padding: 142px 0; /* Top and bottom padding */
+    background-color: #e5e5e5;
+    gap: 142px; /* Space between sections */
+  }
+
+  /* Projects Grid */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    gap: 40px; /* Space between project cards */
+    align-items: start;
+    justify-content: center;
+    padding: 0 20px; /* Side padding */
+  }
+
+  /* Project Card */
+  .project-card {
+    display: flex; /* Flex layout to position image and text side by side */
+    flex-direction: row; /* Ensure image and text are aligned horizontally */
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 1156px; /* Fixed width for the card */
+    height: 496px; /* Fixed height for the card */
+    gap: 0; /* No gap between the image and text */
+    opacity: 1; /* Ensure the card is fully visible */
+    margin: 0 auto; /* Center the card horizontally */
+    margin-bottom: 112px;
+  }
+
+  /* Left Side - Text Content */
+  .project-content {
+    width: 544px; /* Fixed width for the text side */
+    padding: 24px 0; /* Padding for spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    gap: 24px; /* Space between elements */
+    opacity: 1;
+  }
+
+  /* Right Side - Image */
+  .project-image {
+    width: 544px; /* Fixed width for the image side */
+    height: 445px; /* Fixed height for the image side */
+    padding: 24px 0 0 0;
+    display: flex;
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+    opacity: 1;
+  }
+
+  /* Image Styling */
+  .project-image img {
+    width: 100%; /* Full width of the image container */
+    height: 100%; /* Full height of the image container */
+    object-fit: cover; /* Ensures the image fits without stretching */
+    border-radius: 8px; /* Rounded corners */
+  }
+
+  /* Project Details */
+  .project-details h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f2533;
+    margin: 0 0 10px 0;
+  }
+
+  .project-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .project-info span {
+    font-size: 14px;
+    color: #707070;
+  }
+
+  .project-details p {
+    font-size: 15px;
+    color: #707070;
+    margin-top: 10px;
+  }
+
+  /* Technology List */
+  .project-tech {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+  }
+
+  .project-tech li {
+    background-color: #e5e5ff;
+    color: #6763fd;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+
+  /* Button Container */
+  .button-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .project-button {
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 1px solid #6763fd;
+    border-radius: 8px;
+    background-color: white;
+    color: #6763fd;
+    cursor: pointer;
+  }
+}
