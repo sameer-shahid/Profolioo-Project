@@ -87,3 +87,222 @@ nav {
 .mainsection {
   background-color: white;
 }
+
+.custom-div {
+  width: 375px;
+  height: 610px;
+  padding: 114px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./src/headerandfooter/header-shapes\ mobile.png);
+  margin-bottom: 114px;
+}
+
+.primarytext {
+  font-size: 40px;
+  color: #1f2533;
+  font-weight: 700;
+  line-height: 1.2;
+  width: 327px;
+  height: auto; /* Adjusted for flexibility */
+  margin-bottom: 14px;
+}
+
+.primarytext2 {
+  font-size: 18px; /* Adjust this as needed */
+  color: #666; /* Adjust this color as needed */
+  line-height: 1.5;
+}
+
+.social-icons-about {
+  margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.social-icons-about h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #6763fd;
+  margin-bottom: 15px;
+}
+
+.social-icons-about .icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  width: 170.17px;
+  height: 20px;
+  opacity: 1; /* Make it visible */
+}
+
+.icons img {
+  width: 20px;
+  height: 20px;
+  margin: 0; /* Set margin to 0 on all sides */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Works Section */
+.works {
+  width: 100%;
+  padding: 114px 24px 114px 24px;
+  background-color: #fff;
+  max-width: 375px;
+  height: auto;
+  gap: 188px;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 120px; /* Space between project cards */
+}
+
+/* Project Card */
+.project-card {
+  background-color: #fff;
+  border-radius: 16px 16px 16px 16px; /* Rounded top corners */
+  padding: 16px 0 0 0; /* Padding adjusted */
+  gap: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  text-align: center;
+  width: 327px; /* Adjusted width */
+  height: auto; /* Auto height based on content */
+  opacity: 1; /* Set opacity to visible */
+}
+
+/* Project Card Image */
+.project-card img {
+  width: 295px;
+  height: 220px;
+  border-radius: 8px 0 0 0; /* Rounded top-left corners */
+  object-fit: cover; /* Ensures image fits without stretching */
+  opacity: 1; /* Set opacity to visible */
+}
+
+.project-details-heading {
+  width: 295px;    /* Set the width to 295px */
+  height: auto;    /* Remove fixed height to allow the text to wrap */
+}
+
+.project-details-heading h3 {
+  font-size: 32px;
+  color: #1f2533;
+  margin-top: 10px;
+  font-weight: bold;       /* Makes the text bold */
+  font-family: Poppins, sans-serif;
+  line-height: 1.2;        /* Adjust line-height if needed */
+  white-space: normal;     /* Allows text to wrap onto multiple lines */
+  word-wrap: break-word;    /* Ensures long words will break */
+}
+
+/* Project Information Box */
+.project-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 236px;
+  height: 32px;
+  gap: 12px;
+  opacity: 1;
+}
+
+.project-info span {
+  font-size: 14px;
+  color: #707070;
+  margin: 0;
+}
+
+/* Optional for visual enhancement */
+.project-info span:first-child {
+  font-weight: bold; /* Make the first element bold, like "CANOPY" */
+}
+
+.project-info span:not(:first-child)::before {
+  content: '•'; /* Add a dot separator between items */
+  margin: 0 4px; /* Adjust space around the dot to keep it closer */
+  color: #707070; /* Dot color */
+}
+
+/* Project Description */
+.project-card p {
+  font-size: 14px;
+  color: #707070;
+  margin-top: 5px;
+}
+
+/* Project Details */
+.project-details {
+  text-align: left; /* Align text to the left */
+  width: 295px; /* Set width to 295px */
+  height: auto; /* Auto height based on content */
+  gap: 12px;
+  opacity: 1;
+  padding: 20px 16px; /* Added padding for spacing inside the card */
+  background-color: white; /* White background for card */
+  margin-bottom: 20px; /* Space between the project cards */
+}
+
+/* Project Title */
+.project-details h3 {
+  font-size: 24px; /* Adjusted font size */
+  font-weight: bold;
+  color: #1f2533;
+  margin: 10px 0; /* Adjusted margin for title */
+}
+
+/* Project Description */
+.project-details p {
+  font-size: 15px; /* Slightly larger for better readability */
+  color: #707070;
+  margin-top: 5px;
+}
+
+/* Technology List */
+.project-tech {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+/* Technology List Items */
+.project-tech li {
+  background-color: #e5e5ff; /* Light background similar to the screenshot */
+  color: #6763fd; /* Text color matching the button */
+  padding: 5px 15px; /* Larger padding for tech labels */
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.button-container {
+  width: 295px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: left; /* Centers the button inside the div */
+  padding: 0;
+}
+
+.project-button {
+  font-size: 15px;
+  padding: 10px 20px;
+  border: 1px solid #6763fd;
+  border-radius: 8px;
+  background-color: white;
+  color: #6763fd;
+  cursor: pointer;
+}
