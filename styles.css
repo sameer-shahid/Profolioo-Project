@@ -663,7 +663,6 @@ ul {
 
 /* Desktop version - apply for screens wider than 768px */
 @media (min-width: 768px) {
-  
   body {
     max-width: 1440px; /* Increase the max width for desktop screens */
     margin: 0 auto; /* Center the body content */
@@ -1055,3 +1054,4 @@ ul {
     text-align: left;
   }
 
+}
