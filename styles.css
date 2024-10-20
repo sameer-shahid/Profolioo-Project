@@ -660,3 +660,132 @@ ul {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+/* Desktop version - apply for screens wider than 768px */
+@media (min-width: 768px) {
+  body {
+    max-width: 1440px; /* Increase the max width for desktop screens */
+    margin: 0 auto; /* Center the body content */
+    background-color: #e5e5e5;
+  }
+
+  header {
+    width: 1440px;
+    height: 72px;
+    padding: 16px 143px;
+    margin: 0 auto;
+  }
+
+  nav a {
+    color: #333;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: normal;
+    margin-right: 30px;
+  }
+
+  .logo a {
+    font-size: 1.5rem; /* Larger size for desktop */
+    color: #6763fd;
+  }
+
+  /* Display the navigation links on desktop */
+  nav {
+    display: flex;
+    gap: 30px;
+  }
+
+  nav a:last-child {
+    margin-right: 0; /* Remove margin for last item */
+  }
+
+  /* Hide the hamburger icon on desktop */
+  .menu-icon {
+    display: none; /* Hide on desktop */
+  }
+
+  .custom-div {
+    width: 1397px; /* Adjust to full width to avoid hardcoded pixel values */
+    height: 721.46px;
+    background-image: url('./src/headerandfooter/Header%20bg.svg');
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the background image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 0;
+  }
+
+  .mainsection {
+    width: 1440.4px;
+    height: 721.46px;
+    padding: 0 0 0 0;
+    background-color: white;
+    border-bottom-left-radius: 112px;
+  }
+
+  .headline {
+    text-align: left;
+  }
+
+  .intro {
+    margin-bottom: 40px;
+  }
+
+  .primarytext {
+    width: 529px;
+    height: 130px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.3700000047683716px;
+    text-align: left;
+    padding: 40px 40px 40px 0;
+  }
+
+  .primarytext2 {
+    padding: 40px 40px 0 0;
+    width: 920px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+  }
+
+  .social-icons-about {
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .social-icons-about h2 {
+    width: 334px;
+    height: 24px;
+    padding: 0 40px 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #6763fd;
+  }
+
+  .social-icons-about .icons {
+    padding: 0 40px 40px 0;
+    display: flex;
+    gap: 10px;
+    width: 170.17px;
+    height: 20px;
+  }
+
+  .icons img {
+    width: 20px;
+    height: 20px;
+    margin: bottom 0;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
